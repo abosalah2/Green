@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background-image: url(products.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.logo img{
+  position: relative;
+  display: inline-block;
+  float:right;
+  width: 190px;
+  height: 240px;
+
+
+}
+
+
+.man-nav {
+
+  float: right;
+  list-style:none;
+  top: 150px;
+}
+
+
+.main-nav li {
+display: inline-block;
+
+}
+
+
+
+a{
+  color:white;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+li a:active
+{
+  border: 3px; solid black;
+}
+
+
+.main-nav a:hover
+{
+   border: 1px solid white;
+   background-color: darkorange;
+
+}
+
+#weather
+{
+    position: absolute;
+    font-size: 10px;
+    color: blue;
+    top:40%;
+    right:8%;
+    padding: 50px 30px;
+    width: 250px;
+
+}
+
+p {
+  font-family: 'Lateef', serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  width: 600px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: italic white;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  width: 600px;
+  height: 200px;
+
+}
+
+
+option {
+  width: 140px;
+
+}
+
+#footer{
+  position: absolute;
+  margin-left: 30%;
+  margin-top:20%;
+}
+
+#btns {
+  padding: 14px 40px
+
+}

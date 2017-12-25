@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Our Products</title>
+        <link rel="stylesheet" href="style-products.css">
+
+        <div class="row">
+            <div class="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+          <ul class = "main-nav">
+            <li><a href="index.html"> Home</a></li>
+              <li><a href=""> About</a></li>
+                <li><a href="products.html">Products and Services</a></li>
+                <li><a href=""> Location and Contacts </a></li>
+
+                    </ul>
+
+  </head>
+
+
+
+
+  <body>
+
+<div>
+
+            <select id="weather">
+              <option value="products">Our products</option>
+              <option value="sunny">حبوب</option>
+              <option value="rainy">بزور</option>
+              <option value="snowing">اسمده</option>
+              <option value="overcast">مبيدات حشريه</option>
+
+            </select>
+</div>
+
+<div>
+<footer id="footer">
+  <button id= "btns">Delete Me</button>
+
+
+</footer>
+</div>
+
+<p></p>
+
+  </body>
+
+
+<script>
+
+const btn = document.querySelector('#btns');
+btn.addEventListener('click', function(e){
+
+  const li = e.target.parentElement;
+  li.parentNode.removeChild(li)
+  
+})
+
+
+
+
+
+var select = document.querySelector('select');
+var para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+
+function setWeather() {
+  var choice = select.value;
+
+  switch (choice) {
+    case 'sunny':
+      para.textContent = "في علم النبات تعتبر الحبيبات و الحبوب مترادفة مع البرة وهي ثمار من فصيلة العشب . في الهندسة الزراعية و التجارية تسمى البذور أو الفاكهة التي من فصائل النباتات الأخرى بالحبوب إذا كانت مشابه للبرة مثل القُطَيفة تباع باسم “قطيفة الحبوب” ويمكن وصف منتجات القُطَيفة بوصف“الحبوب الكاملة”. كانت الحضارات في العصر "
+      break;
+    case 'snowing':
+      para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+      break;
+    case 'overcast':
+      alert("لا يوجد مخزون هذه الفتره، يرجي مراجعه الشركه لاحقا")
+      break;
+    default:
+      para.textContent = '';
+  }
+}
+
+
+
+</script>
+
+</html>
